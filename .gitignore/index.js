@@ -14,7 +14,7 @@ bot.on('message', function (message) {
     if (message.content === '^loop') {
         var interval = setInterval(function () {
             return message.channel.send('Il serait temps de penser à te coucher @Zixxos =)')
-        }, 1 * 1000);
+        }, 1 * 86400000);
     }
 })
 
