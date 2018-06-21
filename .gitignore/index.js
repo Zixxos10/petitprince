@@ -20,4 +20,4 @@ bot.on('message', function (message) {
 
 
 
-bot.login('NDU5MjgzMTMyMjI3NzgwNjEw.Dg0CkA.5r-z-MnRdU-5X1nf_Zij1jO9G7k')
+bot.login('NDU5MjgzMTMyMjI3NzgwNjEw.Dg0HTQ.XYNHL86sTskPZNuQvkbf05tziCk')
