@@ -11,11 +11,16 @@ bot.on('message', function (message) {
     if (message.content === '!ping') {
         return message.channel.send('pong')
     }
-    if (message.content === '^loop') {
+    if (message.content === '^loopdormir') {
+        var active = True;
         var interval = setInterval(function () {
-            return message.channel.send('Il serait temps de penser à te coucher @Zixxos =)')
-        }, 1 * 86400000);
+            if (active === True) {
+                return message.channel.send('Il serait temps de penser à dormir Lolo =)')
+            }
+        }, 1 * 2000);
     }
+    if (message.content === '^stoploop') {
+        var active = False;
 })
 
 
