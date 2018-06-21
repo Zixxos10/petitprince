@@ -5,7 +5,7 @@ bot.on('ready', function () {
     bot.user.setAvatar('./pp_avatar.png').catch(console.error)
     bot.user.setUsername('Petit Prince').catch(console.error)
     bot.user.setActivity('surveiller Lolo').catch(console.error)
-    var activeloop = false;
+    var activeloop = false
 })
 
 bot.on('message', function (message) {
@@ -13,7 +13,7 @@ bot.on('message', function (message) {
         return message.channel.send('pong')
     }
     if (message.content === '^loopdormir') {
-        activeloop = true;
+        activeloop = true
         var interval = setInterval(function () {
             if (activeloop === true) {
                 return message.channel.send('Il serait temps de penser à dormir lolo =)')
@@ -21,7 +21,7 @@ bot.on('message', function (message) {
         }, 1 * 2000);
     }
     if (message.content === '^stoploop') {
-        activeloop = false;
+        activeloop = false
 })
 
 
