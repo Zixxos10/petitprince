@@ -15,7 +15,7 @@ bot.on('message', function (message) {
     if (message.content === '^loopdormir') {
         active = true;
         var interval = setInterval(function () {
-            if (active === True) {
+            if (active === true) {
                 return message.channel.send('Il serait temps de penser à dormir lolo =)')
             }
         }, 1 * 2000);
