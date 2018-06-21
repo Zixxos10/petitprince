@@ -20,4 +20,4 @@ bot.on('message', function (message) {
 
 
 
-bot.login('NDU5MjgzMTMyMjI3NzgwNjEw.Dg0HTQ.XYNHL86sTskPZNuQvkbf05tziCk')
+bot.login(process.env.TOKEN)
