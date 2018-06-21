@@ -13,15 +13,15 @@ bot.on('message', function (message) {
         return message.channel.send('pong')
     }
     if (message.content === '^loopdormir') {
-        active = true;
+        activeloop = true;
         var interval = setInterval(function () {
-            if (active === true) {
+            if (activeloop === true) {
                 return message.channel.send('Il serait temps de penser à dormir lolo =)')
             }
         }, 1 * 2000);
     }
     if (message.content === '^stoploop') {
-        active = false;
+        activeloop = false;
 })
 
 
